@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module exam Que 2</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <style>
+        body,
+        html {
+            margin: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .main-div {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: linear-gradient(to bottom right, rgb(218, 35, 163), rgb(53, 53, 231));
+            background-image: url("https://picsum.photos/id/998/1200/1200");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .myclass {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 400px;
+            margin-top: 50px;
+            background-color: white;
+            border-radius: 8px;
+            padding: 50px;
+        }
+
+        span {
+            font-size: 24px;
+            margin-bottom: 20px;
+
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .details {
+            font-size: 24px;
+            margin: 10px;
+            padding: 15px;
+            color: white;
+        }
+    </style>
+
+    <script src="2.js"></script>
+</head>
+
+<body>
+    <div class="main-div">
+        <div class="myclass">
+            <span> Login Here </span>
+            <form>
+                <div>
+                    <div>
+                        Username:
+                    </div>
+                    <div>
+                        <input type="text" id="inputId1" class="form-control" style="width: 250px;" required>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        Email:
+                    </div>
+                    <div>
+                        <input type="email" id="inputId2" class="form-control" pattern="[a-z0-9.-_]+@gmail.com"
+                            required>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        Passwoed:
+                    </div>
+                    <div>
+                        <input type="password" id="inputId3" class="form-control" pattern=".{8,}" required>
+                    </div>
+                </div>
+                <div>
+                    <div style="display: flex; justify-content: center; margin-top: 20px;">
+                        <button class="btn btn-outlook-secondary bg-warning" style="width: 100px;"
+                            onclick="infoDetail() ">
+                            LOGIN
+                        </button>
+                    </div>
+                </div>
+                <div style="margin-top: 20px; font-size: 14px;">
+                    <input type="checkbox" id="check1"> Keep me logged in <br>
+                    <input type="checkbox" id="check2"> Remember me
+
+
+                </div>
+            </form>
+
+
+        </div>
+
+        <div id="infoContent" class="info">
+            <div id="details" class="details">
+                <div style="font-size: 26px; ">
+
+                </div>
+                <div id="child1">
+
+                </div>
+                <div id="child2">
+
+                </div>
+                <div id="child3">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
